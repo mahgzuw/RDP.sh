@@ -23,7 +23,7 @@ sudo adduser N3LK chrome-remote-desktop
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
-read -p "Paste Here: " CRP
+read -p "DISPLAY= /opt/google/chrome-remote-desktop/start-host --code="4/0AY0e-g7tNTgBahQjL-A9tuydep58yFvOSt6PrVY2k8ARonqVdjW7Q3VWTeWV-Jz0PSK5UA" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$(hostname): " CRP
 su - N3LK -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
